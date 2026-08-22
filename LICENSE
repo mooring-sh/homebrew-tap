@@ -1,3 +1,17 @@
+SCOPE OF THIS LICENCE — READ FIRST
+
+This licence covers ONLY the contents of this repository: the Homebrew cask
+definition (Casks/mooring.rb), the README, and the supporting files here.
+Where the licence text below says "the Software", it means those files and
+nothing else.
+
+It does NOT cover the Mooring application. Mooring is proprietary software
+published by Digital Stratagems Limited and is not open source. Installing it
+through this tap downloads a signed, notarized binary from https://dl.mooring.sh,
+which is governed by its own terms — see https://mooring.sh.
+
+----------------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2026 Digital Stratagems Limited

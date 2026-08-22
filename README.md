@@ -44,6 +44,8 @@ distributed as a notarized disk image from `dl.mooring.sh`.
 - Product and download: [mooring.sh](https://mooring.sh)
 - Questions and bug reports: [hello@mooring.sh](mailto:hello@mooring.sh)
 
-The MIT licence here covers this cask definition, not the application.
+The MIT licence in this repository covers **only** the cask definition and
+these docs. Mooring itself is proprietary software and is not open source —
+installing it downloads a signed, notarized binary governed by its own terms.
 
 A [Stratagems](https://stratagems.com) product.
