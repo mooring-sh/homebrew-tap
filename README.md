@@ -21,12 +21,20 @@ brew upgrade --cask --greedy mooring
 
 ## Uninstall
 
+Quit Mooring first. Homebrew asks it to quit for you, but a copy it cannot
+reach — one launched by another user, or holding a modal dialog — keeps writing
+to files that are being removed underneath it.
+
 ```sh
+osascript -e 'quit app "Mooring"'
+
 brew uninstall --cask mooring          # remove the app
 brew uninstall --zap --cask mooring    # also remove settings and data
 ```
 
-`--zap` deletes your Mooring data, including the work-item store. There is no undo.
+`--zap` deletes your Mooring data, including the work-item store — every ticket,
+note and project you have. **There is no undo, and it is not in the Trash
+afterwards.** Back it up first if you might want it back.
 
 ## What this repository is
 

@@ -18,10 +18,13 @@ cask "mooring" do
 
   app "Mooring.app"
 
+  uninstall quit: "sh.mooring.mac"
+
   zap trash: [
     "~/Library/Application Support/Mooring",
     "~/Library/Caches/sh.mooring.mac",
     "~/Library/HTTPStorages/sh.mooring.mac",
+    "~/Library/HTTPStorages/sh.mooring.mac.binarycookies",
     "~/Library/Preferences/sh.mooring.mac.plist",
     "~/Library/Saved Application State/sh.mooring.mac.savedState",
   ]
