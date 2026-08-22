@@ -2,19 +2,18 @@ cask "mooring" do
   version "0.11.0"
   sha256 "d80d525fcef1ab4b461a7c8063e05d4047a4567b69bc6b23ca52497a1268efeb"
 
-  url "https://dl.mooring.sh/Mooring-#{version}.dmg",
-      verified: "dl.mooring.sh/"
+  url "https://dl.mooring.sh/Mooring-#{version}.dmg"
   name "Mooring"
-  desc "Mac-native productivity tool for Claude Code"
+  desc "Productivity tool for Claude Code"
   homepage "https://mooring.sh/"
 
   livecheck do
     url "https://dl.mooring.sh/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Mooring.app"
