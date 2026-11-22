@@ -17,6 +17,7 @@ cask "mooring" do
   depends_on arch: :arm64
 
   app "Mooring.app"
+  binary "#{appdir}/Mooring.app/Contents/Resources/bin/moor"
 
   uninstall quit: "sh.mooring.mac"
 
