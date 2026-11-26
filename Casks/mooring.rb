@@ -1,6 +1,6 @@
 cask "mooring" do
-  version "1.4.0"
-  sha256 "2897be3d2f48c61a7823e2c46fa80f8baf51a4571fa311da4aac995318579e64"
+  version "1.5.0"
+  sha256 "8f42d14b2a48501b8303199a05e7c9b1e0a8a8cde851e6c5c30412db2ba90c77"
 
   url "https://dl.mooring.sh/Mooring-#{version}.dmg"
   name "Mooring"
